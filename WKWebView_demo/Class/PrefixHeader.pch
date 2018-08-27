@@ -1,0 +1,29 @@
+//
+//  PrefixHeader.pch
+//  WKWebView_demo
+//
+//  Created by bet001 on 2018/8/24.
+//  Copyright © 2018年 GrandSu. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#define screenW [UIScreen mainScreen].bounds.size.width  // 屏幕宽度
+#define screenH [UIScreen mainScreen].bounds.size.height  // 屏幕高度
+#define FRAME_webView CGRectMake(0, 0, screenW, screenH - 44)  // webView大小
+#define FRAME_progressView CGRectMake(0, 64, screenW, 5)
+#define FRAME_toolBar CGRectMake(0, screenH - 44, screenW, 44)
+
+#define HISTORYLIST_WEB @"USER_WEBHISTLIST"  // 浏览历史标识符
+
+#define URL_default @"https://www.baidu.com/"  // 默认主页
+//#define URL_default @"https://www.jianshu.com/u/8c75632f8f85"  // 默认主页
+
+
+#import <WebKit/WebKit.h>
+#import <RealReachability.h>
+#import "WebViewController.h"
+#import "WebHistroyListViewController.h"
+
+#endif /* PrefixHeader_pch */

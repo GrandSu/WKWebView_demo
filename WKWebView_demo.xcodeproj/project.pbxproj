@@ -15,6 +15,9 @@
 		573B035C212FF821005FDDA6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 573B035B212FF821005FDDA6 /* main.m */; };
 		573B0366212FF821005FDDA6 /* WKWebView_demoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 573B0365212FF821005FDDA6 /* WKWebView_demoTests.m */; };
 		573B0371212FF821005FDDA6 /* WKWebView_demoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 573B0370212FF821005FDDA6 /* WKWebView_demoUITests.m */; };
+		573B0383212FF913005FDDA6 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 573B0382212FF913005FDDA6 /* WebViewController.m */; };
+		573B038921317F3B005FDDA6 /* WebHistroyListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 573B038821317F3B005FDDA6 /* WebHistroyListViewController.m */; };
+		594887E694B5A31E13D98B9E /* libPods-WKWebView_demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DD3E32FC102F903DB3D7247 /* libPods-WKWebView_demo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0DD3E32FC102F903DB3D7247 /* libPods-WKWebView_demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WKWebView_demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		573B0349212FF820005FDDA6 /* WKWebView_demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WKWebView_demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		573B034C212FF820005FDDA6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		573B034D212FF820005FDDA6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +55,13 @@
 		573B036C212FF821005FDDA6 /* WKWebView_demoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WKWebView_demoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		573B0370212FF821005FDDA6 /* WKWebView_demoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKWebView_demoUITests.m; sourceTree = "<group>"; };
 		573B0372212FF821005FDDA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		573B0380212FF8A6005FDDA6 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		573B0381212FF913005FDDA6 /* WebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		573B0382212FF913005FDDA6 /* WebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		573B038721317F3B005FDDA6 /* WebHistroyListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebHistroyListViewController.h; sourceTree = "<group>"; };
+		573B038821317F3B005FDDA6 /* WebHistroyListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebHistroyListViewController.m; sourceTree = "<group>"; };
+		875C5D3484C9AF1C1AA1A674 /* Pods-WKWebView_demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WKWebView_demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-WKWebView_demo/Pods-WKWebView_demo.release.xcconfig"; sourceTree = "<group>"; };
+		BBFF4D0EC69FD8CB90F08705 /* Pods-WKWebView_demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WKWebView_demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WKWebView_demo/Pods-WKWebView_demo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				594887E694B5A31E13D98B9E /* libPods-WKWebView_demo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +90,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A4A74E3EA7CA5D9B67DD65D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BBFF4D0EC69FD8CB90F08705 /* Pods-WKWebView_demo.debug.xcconfig */,
+				875C5D3484C9AF1C1AA1A674 /* Pods-WKWebView_demo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		482018A7386D056318106335 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0DD3E32FC102F903DB3D7247 /* libPods-WKWebView_demo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		573B0340212FF820005FDDA6 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +114,8 @@
 				573B0364212FF821005FDDA6 /* WKWebView_demoTests */,
 				573B036F212FF821005FDDA6 /* WKWebView_demoUITests */,
 				573B034A212FF820005FDDA6 /* Products */,
+				0A4A74E3EA7CA5D9B67DD65D /* Pods */,
+				482018A7386D056318106335 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +132,8 @@
 		573B034B212FF820005FDDA6 /* WKWebView_demo */ = {
 			isa = PBXGroup;
 			children = (
+				573B037E212FF870005FDDA6 /* Class */,
+				573B037F212FF87C005FDDA6 /* Controller */,
 				573B034C212FF820005FDDA6 /* AppDelegate.h */,
 				573B034D212FF820005FDDA6 /* AppDelegate.m */,
 				573B034F212FF820005FDDA6 /* ViewController.h */,
@@ -132,6 +165,25 @@
 			path = WKWebView_demoUITests;
 			sourceTree = "<group>";
 		};
+		573B037E212FF870005FDDA6 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				573B0380212FF8A6005FDDA6 /* PrefixHeader.pch */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		573B037F212FF87C005FDDA6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				573B0381212FF913005FDDA6 /* WebViewController.h */,
+				573B0382212FF913005FDDA6 /* WebViewController.m */,
+				573B038721317F3B005FDDA6 /* WebHistroyListViewController.h */,
+				573B038821317F3B005FDDA6 /* WebHistroyListViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,6 +191,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 573B0375212FF821005FDDA6 /* Build configuration list for PBXNativeTarget "WKWebView_demo" */;
 			buildPhases = (
+				24D1E5353538DE7C92B198F4 /* [CP] Check Pods Manifest.lock */,
 				573B0345212FF820005FDDA6 /* Sources */,
 				573B0346212FF820005FDDA6 /* Frameworks */,
 				573B0347212FF820005FDDA6 /* Resources */,
@@ -257,6 +310,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		24D1E5353538DE7C92B198F4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WKWebView_demo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		573B0345212FF820005FDDA6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -265,6 +339,8 @@
 				573B0351212FF820005FDDA6 /* ViewController.m in Sources */,
 				573B035C212FF821005FDDA6 /* main.m in Sources */,
 				573B034E212FF820005FDDA6 /* AppDelegate.m in Sources */,
+				573B038921317F3B005FDDA6 /* WebHistroyListViewController.m in Sources */,
+				573B0383212FF913005FDDA6 /* WebViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +436,8 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/WKWebView_demo/Class/PrefixHeader.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -370,7 +448,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -416,13 +494,15 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/WKWebView_demo/Class/PrefixHeader.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -431,11 +511,13 @@
 		};
 		573B0376212FF821005FDDA6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBFF4D0EC69FD8CB90F08705 /* Pods-WKWebView_demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 79ZG88EY3M;
 				INFOPLIST_FILE = WKWebView_demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -448,11 +530,13 @@
 		};
 		573B0377212FF821005FDDA6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 875C5D3484C9AF1C1AA1A674 /* Pods-WKWebView_demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 79ZG88EY3M;
 				INFOPLIST_FILE = WKWebView_demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

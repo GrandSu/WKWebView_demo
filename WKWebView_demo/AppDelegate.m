@@ -9,14 +9,36 @@
 #import "AppDelegate.h"
 
 @interface AppDelegate ()
+@property (nonatomic, strong) WebViewController *webVC;
 
 @end
 
 @implementation AppDelegate
 
+- (WebViewController *)webVC {
+    if (!_webVC) {
+        _webVC = [[WebViewController alloc] init];
+    }
+    return _webVC;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    // RealReachability状态网络监听
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        GLobalRealReachability.hostForPing = @"www.baidu.com";
+        GLobalRealReachability.hostForCheck = @"www.apple.com";
+        [GLobalRealReachability startNotifier];
+    });
+    
+    UINavigationController *naVC = [[UINavigationController alloc] initWithRootViewController:self.webVC];
+    
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    [self.window setRootViewController:naVC];
+    
+    // 让当前 UIWindow 窗口变成 keyWiindow (主窗口)，并显示出来
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
